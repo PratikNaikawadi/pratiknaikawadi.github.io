@@ -132,6 +132,52 @@
 	</style>
 
 <!------------------------------------------------------------------------- STYLE ----------------------------------------------------------------------------------------->
+<style>
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 40px;
+  }
+
+  .carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 25s linear infinite;
+    gap: 70px;
+    align-items: center;
+  }
+
+  .carousel-track img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(0%);
+    transition: transform 0.3s ease;
+  }
+
+  .carousel-track img:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carousel-track img {
+      height: 45px;
+    }
+  }
+</style>
+
+
+
    </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -227,14 +273,12 @@
 
 <!--------------------------------------------------------------------------CLIENTS I WORKED WITH ------------------------------------------------------------------------------------>
 
-    <section class="ftco-section ftco-partner">
+    <!-- <section class="ftco-section ftco-partner">
 		<div class="col-md-12 heading-section text-center ftco-animate">
-			<!-- <h1 class="big big-2">Projects</h1> -->
 		  <h2 class="mb-4">CLIENTS I WORKED WITH</h2>
 		  <p>----------------</p>
 		</div>
     	<div class="container">
-			<!-- <h4 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Companies & clients that i've worked with</h4> <br> -->
     		<div class="row">
     			<div class="col-sm ftco-animate">
     				<img src="images/PratikImages/suburbanLOGO.png" class="img-fluid" alt="Colorlib Template">
@@ -254,7 +298,36 @@
     			</div>
     		</div>
     	</div>
-    </section>
+    </section> -->
+
+	<section class="ftco-section ftco-partner">
+  <div class="col-md-12 heading-section text-center ftco-animate">
+    <h2 class="mb-4">CLIENTS I WORKED WITH</h2>
+    <p>----------------</p>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <!-- SET 1 -->
+      <img src="images/PratikImages/suburbanLOGO.png" alt="">
+      <img src="images/PratikImages/nippon-india-mutual-fund3594.jpg" alt="">
+      <img src="images/PratikImages/ThreeUK2.png" alt="">
+      <img src="images/PratikImages/techm.png" alt="">
+	  <img src="images/PratikImages/nilkamalpng.png" alt="">
+	  <img src="images/PratikImages/Tag8-Logo-slst--black.png" alt="">
+      <img src="images/HansaCropped.png" alt="">
+
+      <!-- SET 2 (duplicate for perfect loop) -->
+     <img src="images/PratikImages/suburbanLOGO.png" alt="">
+      <img src="images/PratikImages/nippon-india-mutual-fund3594.jpg" alt="">
+      <img src="images/PratikImages/ThreeUK2.png" alt="">
+      <img src="images/PratikImages/techm.png" alt="">
+	  <img src="images/PratikImages/nilkamalpng.png" alt="">
+	  <img src="images/PratikImages/Tag8-Logo-slst--black.png" alt="">
+      <img src="images/HansaCropped.png" alt="">
+    </div>
+  </div>
+</section>
 
 <!--------------------------------------------------------------------------EDUCATION, EXPERIENCE, SKILLS AND AWARDS ------------------------------------------------------------------------------------>
 
@@ -747,19 +820,19 @@
 <br>
 <br>
 <br>
-    <section class="ftco-section ftco-hireme img" style="background-image: url(images/PratikImages/bike14.png)">
+    <!-- <section class="ftco-section ftco-hireme img" style="background-image: url(images/PratikImages/bike14.png)">
     	<div class="overlay"></div>
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
 						<h2>I'm Available for Call</h2>
 						<!-- <p>Wish to discuss how can i contribute to your team, click on the below button.</p> -->
-						<p class="mb-0"><a href="mailto:info@yoursite.com" class="btn btn-primary py-3 px-5">Hire me</a></p>
+						<!-- <p class="mb-0"><a href="mailto:info@yoursite.com" class="btn btn-primary py-3 px-5">Hire me</a></p>
 					</div>
 				</div>
-			</div>
-		</section>
-<br>
+			</div> -->
+		<!-- </section> -->
+<br> -->
  
 <!--------------------------------------------------------------------------Endorsement ------------------------------------------------------------------------------------>
 
